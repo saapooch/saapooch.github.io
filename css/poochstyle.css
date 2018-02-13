@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: GeosansLight;
+    src: url(../fonts/GeosansLight.ttf);
+}
+
+
+
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.top {
+    display: block;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+.top:hover {
+    background-color: white;
+    color:black;
+}
+
+.modern{
+    color:white;
+    font-family: GeosansLight;
+
+}
+
+
+
+.popupbox ul{
+    list-style-type: none;
+}
+
+
+li.firstlist{
+    float:left;
+    padding: 5px 0px 5px 0px;
+}
+
+ul.innerlist{
+    padding:15px;
+}
+
+.innerlist p{
+    padding: 0px 0px 10px;
+}
+
+.popupbox {
+    position: fixed;
+    padding: 1% 0px 1% 0px;
+    z-index: 100;
+    visibility: hidden;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    font-family: GeosansLight;
+    text-align: center;
+    top:9.5%;
+    right: 0px;
+}
+
+.show {
+    visibility: visible;
+}
+
+
+.logoposition {
+    padding: 1%;
+    text-align: center;
+}
+
+.logoposition img {
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: auto;
+    z-index: 3;
+}
+
+
+
+/*Bottom menu bar */
+
+
+.bottombar ul {
+    position: fixed;
+    bottom: 0%;
+    padding: 1% 1% 0 0;
+	list-style-type: none;
+}
+
+.bottombar ul li a {
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 5px;
+}
+
+
+.bottombar li {
+    float: left;
+}
+
+nav.bottombar{
+    position: fixed;
+    z-index: 10;
+}
+
+.resize1 {
+    width: 40px;
+    height: 40px;
+}
+
+.poochpic{
+    display:block;
+    margin: 0 auto;
+    padding: 0% 0% 25% 8%;
+    width:70%;
+    height:auto;
+}
+
+.col-md-7{
+    position: fixed;
+    height:100vh;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.exp_info{
+    display: inline-block;
+    float:left;
+    text-align: left;
+    color:white;
+    margin:3px 0 0 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .logoposition img {
+        position: fixed;
+        margin: 50px;
+        bottom: 25%;
+        right: 0;
+        left: 0;
+        width: 300px;
+    }
+}
