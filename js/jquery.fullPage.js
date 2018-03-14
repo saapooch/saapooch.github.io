@@ -107,15 +107,15 @@
             navigation: false,
             navigationPosition: 'right',
             navigationTooltips: [],
-            showActiveTooltip: false,
-            slidesNavigation: false,
+            showActiveTooltip: true,
+            slidesNavigation: true,
             slidesNavPosition: 'bottom',
             scrollBar: false,
             hybrid: false,
 
             //scrolling
             css3: true,
-            scrollingSpeed: 700,
+            scrollingSpeed: 1000,
             autoScrolling: true,
             fitToSection: true,
             fitToSectionDelay: 1000,
@@ -126,7 +126,7 @@
             loopHorizontal: true,
             continuousVertical: false,
             continuousHorizontal: false,
-            scrollHorizontally: false,
+            scrollHorizontally: true,
             interlockedSlides: false,
             dragAndMove: false,
             offsetSections: false,
@@ -148,7 +148,7 @@
 
             //design
             controlArrows: true,
-            controlArrowColor: '#fff',
+            controlArrowColor: 'transparent',
             verticalCentered: true,
             sectionsColor : [],
             paddingTop: 0,
@@ -158,10 +158,10 @@
             responsiveWidth: 0,
             responsiveHeight: 0,
             responsiveSlides: false,
-            parallax: false,
+            parallax: true,
             parallaxOptions: {
                 type: 'reveal',
-                percentage: 62,
+                percentage: 30,
                 property: 'translate'
             },
 
@@ -788,8 +788,8 @@
             section.find(SLIDES_WRAPPER_SEL).after('<div class="' + SLIDES_ARROW_PREV + '"></div><div class="' + SLIDES_ARROW_NEXT + '"></div>');
 
             if(options.controlArrowColor!='#fff'){
-                section.find(SLIDES_ARROW_NEXT_SEL).css('border-color', 'transparent transparent transparent '+options.controlArrowColor);
-                section.find(SLIDES_ARROW_PREV_SEL).css('border-color', 'transparent '+ options.controlArrowColor + ' transparent transparent');
+                section.find(SLIDES_ARROW_NEXT_SEL).css('border-color', 'transparent yellow green '+options.controlArrowColor);
+                section.find(SLIDES_ARROW_PREV_SEL).css('border-color', 'red '+ options.controlArrowColor + ' transparent blue');
             }
 
             if(!options.loopHorizontal){
@@ -2311,7 +2311,7 @@
             }
 
             //centering it
-            nav.css('margin-left', '-' + (nav.width()/2) + 'px');
+            // nav.css('margin-left', '-' + (nav.width()/2) + 'px');
 
             nav.find('li').first().find('a').addClass(ACTIVE);
         }

@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Personal Site">
     <meta name="author" content="Saahith Pochiraju">
-    <meta name="keywords" content="Saahith, Pochiraju, Personal, Website, Resume, Code, Games ">
+    <meta name="keywords" content="Saahith, Pochiraju, Personal, Website, Games ">
     <title> The Pooch Site </title>
     <link rel="icon" href="images/sp_icon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
     <link rel="stylesheet" type="text/css" href="css/poochstyle.css">
-    <link rel="stylesheet" type="text/css" href="css/space.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110682568-1"></script>
     <script>
@@ -23,96 +22,257 @@
     </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-              sectionsColor: ['black', '#0B3C5D', '#7BAABE'],
-              anchors: ['main', 'about', 'arcade'],
+              sectionsColor: ['white', 'white',  'white'],
+              anchors: ['landing', 'about',  'contact'],
               menu: '#menu',
             });
         });
     </script>
-
 </head>
 
-<body style="background-color:black">
-    <popup class="popupbox" id="contactpopup">
-        <ul>
-            <li class = 'firstlist'>
-                <ul class='innerlist'>
-                    <p> Saahith Pochiraju </p>
-                    <p>saahith116@gmail.com</p>
-                    <p> Icahn School of Medicine at Mount Sinai</p>
-                    <p>New York City, New York </p>
-                </ul>
-            </li>
-        </ul>
-    </popup>
-
-    <header style="width:100%;background-color:black">
-      <nav class="navbar navbar-expand-lg" >
-        <ul id="menu" class=" navbar-nav ml-auto" >
-            <li><a class="top modern" onmouseover = "showContact()" onmouseout="showContact()">Contact</a></li>
-        </ul>
-      </nav>
+<body>
+    <header style="width:100%;position:fixed;z-index:5">
+        <nav class="navbar navbar-expand-lg" >
+            <div data-menuanchor="landing" class="navbar-header"><a class="modern" style="text-decoration:none;color:black" href="#landing">Saahith Pochiraju</a></div>
+            <ul id="menu" class="nav navbar-nav ml-auto">
+                <li data-menuanchor="about" class="nav-item nav-link"><a class="modern link-1" href="#about">About</a></li>
+                <!-- <li data-menuanchor="projects" class="nav-item nav-link"><a class="modern link-1" href="#projects">Projects</a></li> -->
+                <li data-menuanchor="contact" class="nav-item nav-link"><a class="modern link-1" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-
     <div id="fullpage">
-        <div class="section " id="section0">
-            <div id="stars"></div>
-            <div id="stars2"></div>
-            <div id="stars3"></div>
-            <div class="col-md-12">
-                <div class="logoposition"><img src='images/pooch_logo.png'/></div>
+        <div class="section" id="section0">
+            <div class='container-fluid'>
+                <div class='row'>
+                    <div class='col-3 offset-3'>
+                        <h1 class='modern' style='padding:150px 0px'> Saahith Pochiraju </h1>
+                    </div>
+                    <div class='col-1'>
+                        <div style='border-left: 2px solid grey;height:400px'></div>
+                    </div>
+                    <div class='col-3'style='padding:130px 0px'>
+                        <h3 class='modern' style='color:blue'> Analysis </h3>
+                        <h3 class='modern' style='color:red'> Code </h3>
+                        <h3 class='modern' style='color:green'> Design </h3>
+                    </div>
+
+                </div>
             </div>
         </div>
+
         <div class="section" id="section1">
             <div class="slide" id="slide1">
-
+                <div class='container-fluid'>
+                    <div class='row'>
+                        <div class='col-3 offset-1'>
+                            <img style="width:90%" src='images/poochpic.jpg'/>
+                        </div>
+                        <div class='col-7'>
+                            <div class='row'>
+                                <div class='col-12'>
+                                    <div class='row'>
+                                        <div class='col-12'>
+                                            <h3 class='modern'> Bio </h3>
+                                            <h5 class='modern'> Saahith is a strong research professional with a Bachelor’s Degree focused in Applied Mathematics and Biology from Emory University. He is experienced as a bioinformatician and medical researcher with a demonstrated history of working in the hospital & health care industry. Well versed in full-stack web development, machine learning algorithms, quality control procedures, and many languages, tools, and frameworks, he brings a strong skill set to any team.</h5>
+                                        </div>
+                                    </div>
+                                    <div class='row'>
+                                        <div class='col-2'>
+                                            <h3 class='modern' style='padding:20px 0px'> Education </h3>
+                                            <img style="width:100%" src='images/emory.png'/>
+                                        </div>
+                                        <div class='col-6'>
+                                            <h6 class='modern' style='padding:28% 0 0'> Applied Math and Biology, BS </h6>
+                                            <h6 class='modern'> Class of 2017 </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="slide" id="slide2">
+                <div class='container-fluid'>
+                    <div class='row'>
+                    <div class='offset-1 col-10'>
+                        <div class='row'>
+                            <div class='col-12'>
+                                <h3 class='modern' style='padding:0px 0 40px'> Experience </h3>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class="col-4" ontouchstart="this.classList.toggle('hover');">
+                                <div class='flip-container'>
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img class='job_pics' src='images/sinai.png'/>
+                                        </div>
+                                        <div class="back" style='background-color:green'>
+                                            <h4 class='modern-light pads'> Icahn School of Medicine at Mount Sinai </h4>
+                                            <h6 class='modern-light pads'> Bioinformatician </h6>
+                                            <h6 class='modern-light pads'> June 2017 - Current </h6>
+                                            <h6 class='modern-light pads'> Building database and web service for whole-cell model development </h6>
+                                            <h6 class='modern-light pads'> Creating data inference and learning techniques to account for sparse data sets</h6>
+                                            <h8 class='modern-light pads'> Papers: <a style='color:white' href='https://www.sciencedirect.com/science/article/pii/S2452310017301853'> A blueprint for human whole-cell modeling</a> </h8>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4" ontouchstart="this.classList.toggle('hover');">
+                                <div class='flip-container'>
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img class='job_pics' src='images/choa.png'/>
+                                        </div>
+                                        <div class="back" style='background-color:blue'>
+                                            <h4 class='modern-light pads'> Children's Hospital of Atlanta </h4>
+                                            <h6 class='modern-light pads'> Clinical Researcher </h6>
+                                            <h6 class='modern-light pads'> May 2015 - May 2017 </h6>
+                                            <h6 class='modern-light pads'> Defined normative range for Nerve Conduction Study (NCS) values in children </h6>
+                                            <h6 class='modern-light pads'> Established national statistics with payor data from IBM Truven Database</h6>
+                                            <h8 class='modern-light pads'> Papers: <a style='color:white' href='http://onlinelibrary.wiley.com/doi/10.1002/mus.25181/abstract'> Superficial fibular sensory nerve study </a> </h8>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4" ontouchstart="this.classList.toggle('hover');">
+                                <div class='flip-container'>
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img class='job_pics' style='padding:60px 0 0' src='images/emory_rehab.png'/>
+                                        </div>
+                                        <div class="back" style='background-color:red'>
+                                            <h4 class='modern-light pads'> Emory Rehabilitation Hospital </h4>
+                                            <h6 class='modern-light pads'> Lab Technician </h6>
+                                            <h6 class='modern-light pads'> May 2016 - May 2017 </h6>
+                                            <h6 class='modern-light pads'> Developed a metric for quantifying gait variability with motion tracking data</h6>
+                                            <h6 class='modern-light pads'> Administered hypoxia and trained walking for spinal cord injury patients</h6>
+                                            <h8 class='modern-light pads'> Papers: Endpoint Variability in Overground Walking (Under Review)  </h8>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
 
+            <div class="slide" id="slide3">
+                <div class='container-fluid'>
+                    <div class='row'>
+                        <div class='col-3 offset-1'>
+                            <h3 class='modern' style='padding:0 0 40px'> Skills </h3>
+                        </div>
+                    </div>
+                    <div class='row'>
+                    <div class='col-10 offset-1'>
+                        <div class='contain'>
+                            <div class='row'>
+                                <div class='col-2'>
+                                    <h4 class='modern'> Languages </h4>
+                                </div>
+                                <div class='col-10'>
+                                    <img class='language'src='images/python.jpg'/>
+                                    <img class='language'src='images/java.png'/>
+                                    <img class='language'src='images/c++.png'/>
+                                    <img class='language'src='images/html.png'/>
+                                    <img class='language'src='images/solidity.svg'/>
+                                    <img class='language'src='images/sql.png'/>
+                                    <img class='language'src='images/matlab.png'/>
+                                </div>
+                            </div>
+                            <div class='row' style='padding:20px 0px'>
+                                <div class='col-2'>
+                                    <h4 class='modern'> Frameworks </h4>
+                                </div>
+                                <div class='col-10'>
+                                    <img class='language'src='images/flask.png'/>
+                                    <img class='language'src='images/django.png'/>
+                                    <img class='language'src='images/meteor.png'/>
+                                    <img class='language'src='images/tensorflow.png'/>
+                                    <img class='language'src='images/truffle.png'/>
+                                    <img class='language'src='images/mongodb.png'/>
+                                    <img class='language'src='images/sqlite.png'/>
+                                </div>
+                            </div>
+                            <div class='row' style='padding:20px 0px'>
+                                <div class='col-2'>
+                                    <h4 class='modern'> Libraries </h4>
+                                </div>
+                                <div class='col-10'>
+                                    <h5 class='modern'> Sci-Kit Learn, ReactJS, Pytest, Mocha, Sphinx, SQLAlchemy, NumPy, SciPy, Pandas, Requests, Web3</h5>
+                                </div>
+                            </div>
+                            <div class='row' style='padding:20px 0px'>
+                                <div class='col-2'>
+                                    <h4 class='modern'> Production </h4>
+                                </div>
+                                <div class='col-10'>
+                                    <img class='language-h'src='images/aws.jpg'/>
+                                    <img class='language-h'src='images/heroku.png'/>
+                                </div>
+                            </div>
+                            <div class='row' style='padding:20px 0px'>
+                                <div class='col-2'>
+                                    <h4 class='modern'> Quality Control </h4>
+                                </div>
+                                <div class='col-10'>
+                                    <img class='language-h'src='images/circleci.png'/>
+                                </div>
+                            </div>
+                            <div class='row' style='padding:20px 0px'>
+                                <div class='col-2'>
+                                    <h4 class='modern'> Experimental </h4>
+                                </div>
+                                <div class='col-10'>
+                                    <h5 class='modern'> PCR, Cryosectioning, Immunostaining, Microscopy, Western Blot </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
-
         </div>
-
 
         <div class="section" id="section2">
-        </div>
-        <div class="section" id="section3">
+            <div class='container-fluid'>
+                <div class='row'>
+                    <div class='offset-5 col-8 pads'>
+                        <h3 class='modern'> Saahith Pochiraju </h3>
+                        <h3 class='modern'> saahith116@gmail.com </h3>
+                        <h3 class='modern'> NYC, New York </h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+
+
     <footer class="container-fluid">
-        <div class = "row">
-            <div class = "col">
-                <nav class="bottombar">
-                	<ul>
-                		<li><a href="https://www.facebook.com/saahith.pochiraju"><img class="resize1" src="images/fb.png"/></a></li>
-                		<li><a href="https://www.instagram.com/pooch116/?hl=en"><img class="resize1" src="images/ig.png"/></a></li>
-                		<li><a href="https://www.linkedin.com/in/saahith-pochiraju-379a6394"><img class="resize1" src="images/linked.png"/></a></li>
-                		<li><a href="https://github.com/saapooch"><img class="resize1" src="images/git.png"/></a></li>
-                    </ul>
-                </nav>
-    	    </div>
-        </div>
+        <nav class="bottombar">
+        	<ul>
+        		<li><a href="https://www.facebook.com/saahith.pochiraju"><img class="resize1" src="images/fb.png"/></a></li>
+        		<li><a href="https://www.instagram.com/pooch116/?hl=en"><img class="resize1" src="images/ig.png"/></a></li>
+        		<li><a href="https://www.linkedin.com/in/saahith-pochiraju-379a6394"><img class="resize1" src="images/linked.png"/></a></li>
+        		<li><a href="https://github.com/saapooch"><img class="resize1" src="images/git.png"/></a></li>
+            </ul>
+        </nav>
     </footer>
 
-<script>
-// When the user clicks on div, open the popup
-function showContact() {
-    var popup = document.getElementById("contactpopup");
-    popup.classList.toggle("show");
-}
 
-function showGames() {
-    var div = document.getElementById("gamespopup");
-    div.classList.toggle("show");
-}
+<script>
+
 
 </script>
 
