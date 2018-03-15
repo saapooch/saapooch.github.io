@@ -161,7 +161,7 @@
             parallax: true,
             parallaxOptions: {
                 type: 'reveal',
-                percentage: 30,
+                percentage: 100,
                 property: 'translate'
             },
 

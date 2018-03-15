@@ -10,6 +10,9 @@
     <title> The Pooch Site </title>
     <link rel="icon" href="images/sp_icon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/poochstyle.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110682568-1"></script>
@@ -26,8 +29,8 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-              sectionsColor: ['white', 'white',  'white'],
-              anchors: ['landing', 'about',  'contact'],
+              sectionsColor: ['white', 'white', 'white', 'white'],
+              anchors: ['landing', 'about','projects',  'contact'],
               menu: '#menu',
             });
         });
@@ -35,59 +38,65 @@
 </head>
 
 <body>
-    <header style="width:100%;position:fixed;z-index:5">
-        <nav class="navbar navbar-expand-lg" >
+    <header>
+        <nav class="navbar navbar-light fixed-top navbar-expand-lg navbar-toggleable-sm">
             <div data-menuanchor="landing" class="navbar-header"><a class="modern" style="text-decoration:none;color:black" href="#landing">Saahith Pochiraju</a></div>
-            <ul id="menu" class="nav navbar-nav ml-auto">
-                <li data-menuanchor="about" class="nav-item nav-link"><a class="modern link-1" href="#about">About</a></li>
-                <!-- <li data-menuanchor="projects" class="nav-item nav-link"><a class="modern link-1" href="#projects">Projects</a></li> -->
-                <li data-menuanchor="contact" class="nav-item nav-link"><a class="modern link-1" href="#contact">Contact</a></li>
-            </ul>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" ></span>
+            </button>
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+                <ul id="menu" class="nav navbar-nav ml-auto">
+                    <li data-menuanchor="about" class="nav-item nav-link"><a class="modern link-1" href="#about">About</a></li>
+                    <li data-menuanchor="projects" class="nav-item nav-link"><a class="modern link-1" href="#projects">Projects</a></li>
+                    <li data-menuanchor="contact" class="nav-item nav-link"><a class="modern link-1" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <div id="fullpage">
         <div class="section" id="section0">
-            <div class='container-fluid'>
-                <div class='row'>
-                    <div class='col-3 offset-3'>
-                        <h1 class='modern' style='padding:150px 0px'> Saahith Pochiraju </h1>
+                <div class='container-fluid'>
+                    <div class='row'>
+                        <div class='col-lg-3 offset-lg-3'>
+                            <h1 class='modern pads-large temp-border' > Saahith Pochiraju </h1>
+                        </div>
+                        <div class='col-lg-1'>
+                            <div class='borderz'></div>
+                        </div>
+                        <div class='col-lg-3 pads-large'>
+                            <h3 class='modern' style='color:blue'> Analysis </h3>
+                            <h3 class='modern' style='color:red'> Code </h3>
+                            <h3 class='modern' style='color:green'> Design </h3>
+                            <h3 class='modern mobile-status'> Mobile Site Under Construction</h3>
+                        </div>
                     </div>
-                    <div class='col-1'>
-                        <div style='border-left: 2px solid grey;height:400px'></div>
-                    </div>
-                    <div class='col-3'style='padding:130px 0px'>
-                        <h3 class='modern' style='color:blue'> Analysis </h3>
-                        <h3 class='modern' style='color:red'> Code </h3>
-                        <h3 class='modern' style='color:green'> Design </h3>
-                    </div>
-
                 </div>
-            </div>
         </div>
+
 
         <div class="section" id="section1">
             <div class="slide" id="slide1">
                 <div class='container-fluid'>
                     <div class='row'>
-                        <div class='col-3 offset-1'>
-                            <img style="width:90%" src='images/poochpic.jpg'/>
+                        <div class='col-lg-3 offset-lg-1'>
+                            <img class='pooch_img' src='images/poochpic.jpg'/>
                         </div>
-                        <div class='col-7'>
+                        <div class='col-lg-7'>
                             <div class='row'>
-                                <div class='col-12'>
+                                <div class='col-lg-12'>
                                     <div class='row'>
-                                        <div class='col-12'>
-                                            <h3 class='modern'> Bio </h3>
+                                        <div class='col-lg-12'>
+                                            <h2 class='modern'> Bio </h2>
                                             <h5 class='modern'> Saahith is a strong research professional with a Bachelor’s Degree focused in Applied Mathematics and Biology from Emory University. He is experienced as a bioinformatician and medical researcher with a demonstrated history of working in the hospital & health care industry. Well versed in full-stack web development, machine learning algorithms, quality control procedures, and many languages, tools, and frameworks, he brings a strong skill set to any team.</h5>
                                         </div>
                                     </div>
                                     <div class='row'>
-                                        <div class='col-2'>
-                                            <h3 class='modern' style='padding:20px 0px'> Education </h3>
+                                        <div class='col-lg-2'>
+                                            <h2 class='modern' style='padding:20px 0px'> Education </h2>
                                             <img style="width:100%" src='images/emory.png'/>
                                         </div>
-                                        <div class='col-6'>
+                                        <div class='col-lg-6'>
                                             <h6 class='modern' style='padding:28% 0 0'> Applied Math and Biology, BS </h6>
                                             <h6 class='modern'> Class of 2017 </h6>
                                         </div>
@@ -109,53 +118,53 @@
                             </div>
                         </div>
                         <div class='row'>
-                            <div class="col-4" ontouchstart="this.classList.toggle('hover');">
+                            <div class="col-lg-4" ontouchstart="this.classList.toggle('hover');">
                                 <div class='flip-container'>
                                     <div class="flipper">
                                         <div class="front">
                                             <img class='job_pics' src='images/sinai.png'/>
                                         </div>
                                         <div class="back" style='background-color:green'>
-                                            <h4 class='modern-light pads'> Icahn School of Medicine at Mount Sinai </h4>
-                                            <h6 class='modern-light pads'> Bioinformatician </h6>
-                                            <h6 class='modern-light pads'> June 2017 - Current </h6>
-                                            <h6 class='modern-light pads'> Building database and web service for whole-cell model development </h6>
-                                            <h6 class='modern-light pads'> Creating data inference and learning techniques to account for sparse data sets</h6>
-                                            <h8 class='modern-light pads'> Papers: <a style='color:white' href='https://www.sciencedirect.com/science/article/pii/S2452310017301853'> A blueprint for human whole-cell modeling</a> </h8>
+                                            <div class='modern-light pads-title'> Icahn School of Medicine at Mount Sinai </div>
+                                            <div class='modern-light pads'> Bioinformatician </div>
+                                            <div class='modern-light pads'> June 2017 - Current </div>
+                                            <div class='modern-light pads'> Building database and web service for whole-cell model development </div>
+                                            <div class='modern-light pads'> Creating data inference and learning techniques to account for sparse data sets</div>
+                                            <div class='modern-light pads'> Papers: <a style='color:white' href='https://www.sciencedirect.com/science/article/pii/S2452310017301853'> A blueprint for human whole-cell modeling</a> </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4" ontouchstart="this.classList.toggle('hover');">
+                            <div class="col-lg-4" ontouchstart="this.classList.toggle('hover');">
                                 <div class='flip-container'>
                                     <div class="flipper">
                                         <div class="front">
                                             <img class='job_pics' src='images/choa.png'/>
                                         </div>
                                         <div class="back" style='background-color:blue'>
-                                            <h4 class='modern-light pads'> Children's Hospital of Atlanta </h4>
-                                            <h6 class='modern-light pads'> Clinical Researcher </h6>
-                                            <h6 class='modern-light pads'> May 2015 - May 2017 </h6>
-                                            <h6 class='modern-light pads'> Defined normative range for Nerve Conduction Study (NCS) values in children </h6>
-                                            <h6 class='modern-light pads'> Established national statistics with payor data from IBM Truven Database</h6>
-                                            <h8 class='modern-light pads'> Papers: <a style='color:white' href='http://onlinelibrary.wiley.com/doi/10.1002/mus.25181/abstract'> Superficial fibular sensory nerve study </a> </h8>
+                                            <div class='modern-light pads-title'> Children's Hospital of Atlanta </div>
+                                            <div class='modern-light pads'> Clinical Researcher </div>
+                                            <div class='modern-light pads'> May 2015 - May 2017 </div>
+                                            <div class='modern-light pads'> Defined normative range for Nerve Conduction Study (NCS) values in children </div>
+                                            <div class='modern-light pads'> Established national statistics with payor data from IBM Truven Database</div>
+                                            <div class='modern-light pads'> Papers: <a style='color:white' href='http://onlinelibrary.wiley.com/doi/10.1002/mus.25181/abstract'> Superficial fibular sensory nerve study </a> </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4" ontouchstart="this.classList.toggle('hover');">
+                            <div class="col-lg-4" ontouchstart="this.classList.toggle('hover');">
                                 <div class='flip-container'>
                                     <div class="flipper">
                                         <div class="front">
                                             <img class='job_pics' style='padding:60px 0 0' src='images/emory_rehab.png'/>
                                         </div>
                                         <div class="back" style='background-color:red'>
-                                            <h4 class='modern-light pads'> Emory Rehabilitation Hospital </h4>
-                                            <h6 class='modern-light pads'> Lab Technician </h6>
-                                            <h6 class='modern-light pads'> May 2016 - May 2017 </h6>
-                                            <h6 class='modern-light pads'> Developed a metric for quantifying gait variability with motion tracking data</h6>
-                                            <h6 class='modern-light pads'> Administered hypoxia and trained walking for spinal cord injury patients</h6>
-                                            <h8 class='modern-light pads'> Papers: Endpoint Variability in Overground Walking (Under Review)  </h8>
+                                            <div class='modern-light pads-title'> Emory Rehabilitation Hospital </div>
+                                            <div class='modern-light pads'> Lab Technician </div>
+                                            <div class='modern-light pads'> May 2016 - May 2017 </div>
+                                            <div class='modern-light pads'> Developed a metric for quantifying gait variability with motion tracking data</div>
+                                            <div class='modern-light pads'> Administered hypoxia and trained walking for spinal cord injury patients</div>
+                                            <div class='modern-light pads'> Papers: Endpoint Variability in Overground Walking (Under Review)  </div>
                                         </div>
                                     </div>
                                 </div>
@@ -244,17 +253,46 @@
             </div>
         </div>
 
-        <div class="section" id="section2">
+        <div class="section" id="section3">
             <div class='container-fluid'>
                 <div class='row'>
-                    <div class='offset-5 col-8 pads'>
-                        <h3 class='modern'> Saahith Pochiraju </h3>
-                        <h3 class='modern'> saahith116@gmail.com </h3>
-                        <h3 class='modern'> NYC, New York </h3>
+                    <div class='col-lg-3 offset-lg-1 temp-border'>
+                        <h1 class='modern pads-large' > Current Projects </h1>
+                    </div>
+                    <div class='col-lg-1'>
+                        <div class='borderz'></div>
+                    </div>
+                    <div class='col-lg-4'  >
+                        <div class='row' style='padding:30px'>
+                            <h2 class='modern'> <a style='color:blue' href='https://github.com/KarrLab/kinetic_datanator'> Datanator </a></h2>
+                            <h5 class='modern' style='color:blue'> Creating functional, normalized data for Whole-Cell Models </h5>
+                        </div>
+                        <div class='row' style='padding:30px'>
+                            <h2 class='modern'> <a style='color:red' href='https://github.com/galleryblockchain'> Gallery </a></h2>
+                            <h5 class='modern' style='color:red'> A digital art marketplace using the blockchain </h5>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="section" id="section3">
+            <div class='container-fluid'>
+                <div class='row'>
+                    <div class='col-lg-3 offset-lg-1 temp-border'>
+                        <h1 class='modern pads-large' > Contact </h1>
+                    </div>
+                    <div class='col-lg-1'>
+                        <div class='borderz'></div>
+                    </div>
+                    <div class='col-lg-3 pads-large'>
+                            <h2 class='modern' > saahith116@gmail.com </h2>
+                            <h5 class='modern'> NYC, New York </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
