@@ -788,8 +788,8 @@
             section.find(SLIDES_WRAPPER_SEL).after('<div class="' + SLIDES_ARROW_PREV + '"></div><div class="' + SLIDES_ARROW_NEXT + '"></div>');
 
             if(options.controlArrowColor!='#fff'){
-                section.find(SLIDES_ARROW_NEXT_SEL).css('border-color', 'transparent yellow green '+options.controlArrowColor);
-                section.find(SLIDES_ARROW_PREV_SEL).css('border-color', 'red '+ options.controlArrowColor + ' transparent blue');
+                section.find(SLIDES_ARROW_NEXT_SEL).css('border-color', 'transparent #FFBB00 #3F681C '+options.controlArrowColor);
+                section.find(SLIDES_ARROW_PREV_SEL).css('border-color', '#FB6542 '+ options.controlArrowColor + ' transparent #375E97');
             }
 
             if(!options.loopHorizontal){
