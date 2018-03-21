@@ -163,6 +163,12 @@
     	position: relative;
     }
 
+    .card{
+        border: 1px solid black;
+        width: 340px;
+        height: 200px;
+    }
+
     /* hide back of pane during swap */
     .front, .back {
     	backface-visibility: hidden;
