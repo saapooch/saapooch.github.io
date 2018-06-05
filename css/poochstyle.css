@@ -192,6 +192,25 @@
         font-size: 100%;
 
     }
+
+    .projpaper{
+        float:right;
+        padding:20px
+    }
+
+    .vertpads{
+        padding:30px 0px 0px;
+    }
+
+    .size1{
+        font-size: 110%
+    }
+
+    .size2{
+        font-size: 70%;
+        font-style:italic;
+    }
+
 }
 
 @media only screen and (min-width: 1300px) {
@@ -214,9 +233,24 @@
         font-family: GeosansLight;
     }
 
+    .size1{
+        font-size: 80%
+    }
+
+    .size2{
+        font-size: 50%;
+        font-style:italic;
+    }
+
     .temp-border{
         border-bottom: 2px solid grey;
     }
+
+    .projpaper{
+        float:center;
+        padding:20px
+    }
+
 
     .modern{
         color:black;
@@ -224,12 +258,18 @@
     }
 
     .pads{
-        padding:6px;
-        font-size: 80%;
+        padding:0px 6px;
+        font-size: 60%;
     }
 
+    .font-pad{
+        padding: 0px 50px;
+    }
+
+
+
     .pads-title{
-        padding: 6px;
+        padding: 0px 6px;
         font-size:100%;
     }
 
@@ -250,7 +290,21 @@
     }
 
     .pooch_img{
-        width:60%
+        width:150px; /* you can use % */
+        padding:0px 0px 20px;
+         height: auto;
+        display: block;
+        margin:auto;
+    }
+
+
+
+    .bio{
+        display:none
+    }
+
+    .education{
+        display:none
     }
 
     .link-1:hover {
@@ -260,7 +314,6 @@
       border-bottom: 4px solid black;
       padding: 6px 0;
     }
-
 
 
     /*Bottom menu bar */
@@ -278,7 +331,7 @@
     /* entire container, keeps perspective */
     /* entire container, keeps perspective */
     .flip-container {
-    	perspective: 1000px;
+    	perspective: 500px;
     }
 	/* flip the pane when hovered */
 	.flip-container:hover .flipper, .flip-container.hover .flipper {
@@ -287,7 +340,7 @@
 
     .flip-container, .front, .back {
     	width: 100%;
-        height: 300px;
+        height: 150px;
     }
 
     .contain{
@@ -308,7 +361,7 @@
     }
 
     .job_pics{
-        width:200px;
+        width:100px;
         height:auto;
         display: block;
         margin-left: auto;
@@ -367,18 +420,25 @@
         border: 2px solid black;
     }
 
-    #section1{
-        display:none
-    }
-    #section2{
-        display:none
-    }
-    #section3{
+    .fp-controlArrow{
         display:none
     }
 
-    .mobile-status{
-        padding: 30px 0px 0px;
+    .pooch_font{
+        font-size: 80%;
+        text-align: center;
+
     }
+
+    .card{
+        border: 1px solid black;
+        width: 300px;
+        height: 200px;
+    }
+
+    .reduce{
+        font-size: 70%;
+    }
+
 
 }
