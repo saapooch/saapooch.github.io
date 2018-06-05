@@ -2310,7 +2310,7 @@
                 nav.find('ul').append('<li><a href="#"><span></span></a></li>');
             }
 
-            // centering it
+            //centering it
             // nav.css('margin-left', '-' + (nav.width()/2) + 'px');
 
             nav.find('li').first().find('a').addClass(ACTIVE);
